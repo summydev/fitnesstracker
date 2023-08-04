@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 
-import 'package:quizapp/views/screens/home_screen.dart';
+import 'package:quizapp/views/screens/homescreen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-void main() {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const MyApp());
 }
 
