@@ -1,4 +1,4 @@
-# quizapp
+# FitnessTracker
 
 A new Flutter project.
 
